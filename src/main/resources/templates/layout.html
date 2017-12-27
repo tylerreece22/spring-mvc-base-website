@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>{{{layout.title}}}</title>
+</head>
+<body>
+<ul class="nav nav-pills" role="tablist">
+    {{#menus}}<li><a href="{{path}}">{{name}}</a></li>{{/menus}}
+    <li><a href="#" onclick="document.getElementById('test-page').submit()">Test Page</a></li>
+</ul>
+{{{layout.body}}}
+<form id="test-page" action="/test-page" method="get">
+    <button type="submit" class="btn btn-primary">Test Page</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,5 @@
+app.menus:
+  - name: Home
+    path: /
+  - name: Test Page
+    path: /test-page
